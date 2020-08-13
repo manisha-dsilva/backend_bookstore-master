@@ -1,6 +1,6 @@
 version: '3'
 services:
-     maven:
+     backend_deploy:
          image: "manishadsilva/$IMAGE:$BUILD_TAG"
          container_name: backend
          ports:
