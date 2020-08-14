@@ -110,22 +110,6 @@
 			<artifactId>sonar-maven-plugin</artifactId>
 			<version>3.2</version>
 		</dependency>
-		
-<profiles>
-<profile>
-<id>sonar</id>
-<activation>
-<activeByDefault>true</activeByDefault>
-</activation>
-<properties>
-<!-- Optional URL to server. Default value is http://localhost:9000 -->
-<sonar.host.url>
-http://135.254.163.50:9000
-</sonar.host.url>
-</properties>
-</profile>
-</profiles>
-
 
 		<dependency>
 			<groupId>org.apache.maven.plugins</groupId>
@@ -140,6 +124,21 @@ http://135.254.163.50:9000
 			<type>maven-plugin</type>
 		</dependency>	
 	</dependencies>
+
+<profiles>
+<profile>
+<id>sonar</id>
+<activation>
+<activeByDefault>true</activeByDefault>
+</activation>
+<properties>
+<!-- Optional URL to server. Default value is http://localhost:9000 -->
+<sonar.host.url>
+http://135.254.163.50:9000
+</sonar.host.url>
+</properties>
+</profile>
+</profiles>
 
 	<repositories>
 		<repository>
