@@ -105,7 +105,26 @@
 			<version>${cxf.version}</version>
 		</dependency>
 
-
+		<dependency>
+			<groupId>org.sonarsource.scanner.maven</groupId>
+			<artifactId>sonar-maven-plugin</artifactId>
+			<version>3.2</version>
+		</dependency>
+		
+<profiles>
+<profile>
+<id>sonar</id>
+<activation>
+<activeByDefault>true</activeByDefault>
+</activation>
+<properties>
+<!-- Optional URL to server. Default value is http://localhost:9000 -->
+<sonar.host.url>
+http://135.254.163.50:9000
+</sonar.host.url>
+</properties>
+</profile>
+</profiles>
 
 
 		<dependency>
@@ -119,14 +138,7 @@
 			<artifactId>maven-site-plugin</artifactId>
 			<version>3.9.0</version>
 			<type>maven-plugin</type>
-		</dependency>
-
-
-
-		
-		
-
-		
+		</dependency>	
 	</dependencies>
 
 	<repositories>
