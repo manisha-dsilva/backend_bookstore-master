@@ -1,6 +1,6 @@
 FROM openjdk:8-jre-alpine
 
-RUN mkdir backend_app/app
+RUN mkdir /backend_app
 
 COPY *.jar /backend_app/backend_app.jar 
 
