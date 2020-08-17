@@ -30,6 +30,10 @@
 		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
 		<sonar.jacoco.reportPath>${project.basedir}/../target/jacoco.exec</sonar.jacoco.reportPath>
 		<sonar.language>java</sonar.language>
+		<sonar.host.url>135.254.163.50:9000</sonar.host.url>
+    	<sonar.log.level>DEBUG</sonar.log.level>
+    	<sonar.verbose>true</sonar.verbose>
+    	<sonar.coverage.exclusions>**/*.js</sonar.coverage.exclusions>
 	</properties>
 
 	<parent>
